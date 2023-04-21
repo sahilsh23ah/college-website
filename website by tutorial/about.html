@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header section  -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="eduford_img/logo.png" alt=""></a>
+            <div class="nav-links" id="navlinks">
+                <ion-icon name="close-outline" class="menu" onclick="hidemenu()"></ion-icon>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">course</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <ion-icon name="menu-outline" class="menu" onclick="showmenu()"></ion-icon>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+  
+    <!-- about section  -->
+
+  <section class="about-us">
+    <div class="row">
+        <div class="about-card">
+            <h1>We are the world's largest uiversity</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quisquam, corrupti, laudantium ipsam porro consequatur ea quidem blanditiis numquam maxime labore saepe mollitia accusantium expedita nisi officia vitae quia amet.</p>
+            <a href="" class="btn btn2">Explore Now</a>
+        </div>
+
+        <div class="about-card">
+            <img src="eduford_img/about.jpg" alt="">
+        </div>
+    </div>
+  </section>
+
+
+
+
+<!-- Footer  -->
+<footer>
+    <div class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ut vel ipsam voluptas quisquam dicta cumque, laboredita excepturi. Consectetur, modi at?</p>
+        <div class="icons">
+            <ion-icon name="logo-facebook"  class="socials" ></ion-icon>
+            <ion-icon name="logo-instagram" class="socials" ></ion-icon>
+            <ion-icon name="logo-linkedin"  class="socials" ></ion-icon>
+            <ion-icon name="logo-twitter"   class="socials" ></ion-icon>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script>
+    let navlink = document.getElementById("navlinks");
+    function showmenu(){
+        navlink.style.right="0";
+    }
+    function hidemenu(){
+        navlink.style.right="-200px";
+    }
+</script>
+</body>
+</html>

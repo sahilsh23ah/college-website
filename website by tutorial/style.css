@@ -1,0 +1,474 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30,0.7),rgba(4,9,30,0.7)),url(eduford_img/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    display: flex;
+}
+.nav-links ul li{
+    list-style: none;
+    text-transform: uppercase;
+    padding: 8px 13px;
+    display: inline-block;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition:0.3s;
+}
+.nav-links ul li a:hover{
+    border-bottom: 2px solid orange;
+}
+
+.text-box{
+    width: 70%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    font-size: 14px;
+    margin: 10px 0 40px;
+    color: #fff;
+}
+.btn{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 34px;
+    border: 1px solid;
+    display: inline-block;
+    background: transparent;
+    font-size: 15px;
+    position: relative;
+}
+.btn:hover{
+  border:1px solid #f44336;
+  background: #f44336;
+  transition: 1s;
+}
+.menu{
+    display: none;
+}
+
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        top: 0;
+        right: -200px;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    .menu{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size:22px;
+        cursor: pointer;
+    }
+}
+
+
+/* course */
+
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1{
+    font-size:36px;
+    font-weight: 600;
+}
+p{
+ color: #777; 
+ font-size: 14px;
+ font-weight: 300;
+ line-height: 22px;
+ padding: 10px;
+}
+
+.row{
+    margin-top:5%;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    flex-basis: 31%;
+    background:#fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 600;
+}
+.card:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/* campus */
+
+.campus{
+    text-align: center;
+    margin: auto;
+    width:80%;
+    padding-top: 50px;
+}
+.campus-card{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-card img{
+    width:100%;
+    display: block;
+}
+.layer{
+    background:transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background:rgba(227,0,0,0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* facilities */
+.facilities{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+}
+.facilities-card{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+
+}
+.facilities-card img{
+    width: 100%;
+    border-radius: 10px;
+}
+.facilities-card p{
+    padding: 0;
+}
+.facilities-card h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* testimonials */
+.testimonials{
+    width: 80%;
+    text-align: center;
+    padding-top: 100px;
+    margin: auto;
+}
+.testimonials-card{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background:#fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.testimonials-card img{
+    height: 70px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.testimonials-card p{
+    padding: 0;
+}
+.testimonials-card h3{
+    margin-top: 14px;
+    text-align: left;
+}
+@media (max-width:700px){
+    .testimonials-card img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+
+/* cta  */
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(eduford_img/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    color: #fff;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+@media (max-width:700px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+
+
+/* footer  */
+.footer{
+    text-align: center;
+    width: 100%;
+    padding: 30px 0;
+}
+.footer p{
+    width: 70%;
+    margin: auto;
+}
+.footer h4{
+margin-bottom: 25px;
+margin-top: -34px;
+font-weight: 600;
+}
+.icons{
+    color: #f44336;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.socials{
+    margin: 0 13px;
+    width: 2%;
+    height: 28px;
+}
+
+
+
+/* about us page  */
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(eduford_img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.about-card{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-card img{
+    width:100%;
+}
+.about-card h1{
+  padding-top: 0;
+}
+.about-card p{
+    padding: 15px 0 24px;
+}
+.btn2{
+    border: 1px solid #f44336;
+    background: transparent;
+    color: #f44336;
+}
+.btn2:hover{
+    color: #fff;
+}
+
+/* blog content  */
+
+.blog{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+.blog-left{
+    flex-basis: 65%;
+}
+.blog-left img{
+    width: 100%;
+}
+.blog-left h2{
+    /* color: #fff; */
+    font-weight: 600;
+    margin: 30px 0;
+
+}
+.blog-left p{
+    color: #999;
+    padding: 0;
+}
+
+.blog-right h3{
+    background: #f44336;
+    color: #fff;
+    padding: 7px 0;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.blog-right div{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     color: #555;
+    padding: 8px 0;
+    gap: 9em;
+}
+
+.comment-box{
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+.comment-box h3{
+text-align: left;
+}
+.comment-form input,.comment-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 14px 0;
+    border: none;
+    outline: none;
+    background-color: #f0f0f0;
+} 
+
+@media (max-width:700px){
+    .sub-header h1{
+        font-size: 24px;
+    }
+}
+
+
+/* Contact us page  */
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+.contact-card{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-card div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-card div,.ico{
+    font-size: 28px;
+    /* color: #f44336; */
+    margin: 24px;
+    margin-right: 31px;
+    margin-top: 1px;
+    padding-bottom: 11px;
+}
+.contact-card div p{
+    padding: 0;
+    
+}
+.contact-card div h5{
+    /* font-size: 20px;  */
+    margin-bottom: 7px;
+    color: #555;
+    /* font-weight: 400; */
+}
+.contact-card input,.contact-card textarea{
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    margin-bottom: 18px;
+    border: 2px solid #ccc;
+}
